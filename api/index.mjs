@@ -1,8 +1,9 @@
+import {getUsedField} from "exports-test"
+import {getEnvironmentDetails} from "exports-test/env"
+
 export const config = {runtime: "edge"}
 
-export default async ({url, body, headers}) => new Response(JSON.stringify({
-    query: Object.fromEntries(new URL(url).searchParams.entries()),
-    headers: Object.fromEntries(headers.entries()),
-    body: await new Response(body).text(),
-    env: process.env,
+export default async () => new Response(JSON.stringify({
+    used: getUsedField(),
+    details: getEnvironmentDetails(),
 }))
