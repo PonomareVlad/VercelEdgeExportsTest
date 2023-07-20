@@ -1,6 +1,6 @@
 {
   "name": "vercel-edge-exports-test",
   "dependencies": {
-    "exports-test": "^1.0.1"
+    "exports-test-wintercg": "^1.0.2"
   }
 }
