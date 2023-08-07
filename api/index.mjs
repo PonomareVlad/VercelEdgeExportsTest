@@ -1,5 +1,5 @@
-import {getUsedField} from "exports-test"
-import {getEnvironmentDetails} from "exports-test/env"
+import {getUsedField} from "exports-test-wintercg"
+import {getEnvironmentDetails} from "exports-test-wintercg/env"
 
 export const config = {runtime: "edge"}
 
